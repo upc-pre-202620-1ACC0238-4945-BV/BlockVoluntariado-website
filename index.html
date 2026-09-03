@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="BlockVoluntariado conecta estudiantes, voluntarios y organizaciones con oportunidades flexibles, verificadas y con impacto real." />
+    <title>BlockVoluntariado | Tu tiempo puede cambiar una historia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+<div class="noise"></div>
+<header class="site-header" id="header">
+    <nav class="nav container" aria-label="Navegación principal">
+        <a class="brand" href="#inicio" aria-label="BlockVoluntariado inicio">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 64 64"><path d="M32 56C19 46 9 37 9 24.8 9 16.8 14.5 11 22.2 11c4.4 0 7.8 2 9.8 5.3C34 13 37.4 11 41.8 11 49.5 11 55 16.8 55 24.8 55 37 45 46 32 56Z" fill="currentColor" opacity=".18"/><path d="M18 31c4 0 6-7 10-7 3.3 0 3 5 6 5 3.8 0 4-9 10-9 3.3 0 5 2.7 5 5.5 0 5.8-8.6 14-17 21-4.2-3.5-8.2-7.3-11.2-11H18c-2 0-3.5-1.5-3.5-3.3S16 31 18 31Z" fill="currentColor"/></svg>
+        </span>
+            <span>Block<span>Voluntariado</span></span>
+        </a>
+        <button class="menu-btn" id="menuBtn" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span><span></span></button>
+        <div class="nav-links" id="navLinks">
+            <a href="#oportunidades" data-i18n="nav.opportunities">Voluntariados</a>
+            <a href="#como-funciona" data-i18n="nav.how">Cómo funciona</a>
+            <a href="#ongs" data-i18n="nav.ngo">Para ONG</a>
+            <a href="#impacto" data-i18n="nav.impact">Impacto</a>
+            <a href="#nosotros" data-i18n="nav.about">Nosotros</a>
+            <a href="#faq">FAQ</a>
+        </div>
+        <div class="nav-actions">
+            <button class="lang-btn" id="langBtn" aria-label="Cambiar idioma">ES</button>
+            <a class="btn btn-ghost" href="#contacto" data-i18n="nav.login">Iniciar sesión</a>
+            <a class="btn btn-primary" href="#oportunidades" data-i18n="nav.volunteer">Quiero ser voluntario</a>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <section class="hero" id="inicio">
+        <div class="hero-orb orb-a"></div><div class="hero-orb orb-b"></div>
+        <div class="container hero-grid">
+            <div class="hero-copy reveal">
+                <span class="eyebrow" data-i18n="hero.eyebrow">VOLUNTARIADO, PERO A TU RITMO</span>
+                <h1 data-i18n="hero.title">Tu tiempo puede <span>cambiar una historia.</span></h1>
+                <p data-i18n="hero.text">Encuentra oportunidades presenciales y virtuales según tu ubicación, disponibilidad, intereses y carrera. Participa, genera impacto y obtén reconocimiento por cada acción.</p>
+                <div class="hero-actions">
+                    <a class="btn btn-primary btn-lg" href="#oportunidades" data-i18n="hero.cta">Explorar voluntariados <b>→</b></a>
+                    <a class="text-link" href="#ongs" data-i18n="hero.ngo">Soy una organización <span>↗</span></a>
+                </div>
+                <div class="trust-row">
+                    <span>✓ <em data-i18n="hero.trust1">Horarios flexibles</em></span>
+                    <span>✓ <em data-i18n="hero.trust2">ONG verificadas</em></span>
+                    <span>✓ <em data-i18n="hero.trust3">Certificados digitales</em></span>
+                </div>
+            </div>
+
+            <div class="hero-visual reveal delay-1" aria-label="Vista previa de la aplicación">
+                <div class="phone">
+                    <div class="phone-bar"><span>9:41</span><span>● ◔ ▰</span></div>
+                    <div class="app-head"><span class="mini-logo">BV</span><span class="avatar">DA</span></div>
+                    <div class="app-copy"><small>Hola, Diego 👋</small><h3>Encuentra tu próxima causa</h3></div>
+                    <div class="app-search">⌕ <span>Buscar voluntariado...</span><b>☷</b></div>
+                    <div class="app-card">
+                        <div class="thumb thumb-green">🌱</div>
+                        <div><strong>Limpieza de áreas verdes</strong><small>EcoAcción • Miraflores</small><p>📅 Sáb, 10:00 · ⏱ 2 h</p></div>
+                        <button>Ver</button>
+                    </div>
+                    <div class="app-card">
+                        <div class="thumb thumb-orange">📚</div>
+                        <div><strong>Mentoría escolar online</strong><small>Educa Perú • Virtual</small><p>📅 Mié, 18:00 · ⏱ 1 h</p></div>
+                        <button>Ver</button>
+                    </div>
+                    <div class="app-bottom"><span>⌂</span><span>⌕</span><span>♡</span><span>☺</span></div>
+                </div>
+                <div class="float-card fc-1"><span>🏆</span><div><small>Nuevo logro</small><strong>Agente del Cambio</strong></div></div>
+                <div class="float-card fc-2"><span>📍</span><div><small>A 1.8 km de ti</small><strong>Nueva oportunidad</strong></div></div>
+                <div class="float-card fc-3"><span>✓</span><div><small>Completado</small><strong>Certificado obtenido</strong></div></div>
+            </div>
+        </div>
+        <div class="hero-strip"><div class="container strip-inner"><span>MICROVOLUNTARIADO</span><i>•</i><span>IMPACTO SOCIAL</span><i>•</i><span>COMUNIDAD</span><i>•</i><span>BIENESTAR</span><i>•</i><span>EXPERIENCIA</span></div></div>
+    </section>
+
+    <section class="section opportunities" id="oportunidades">
+        <div class="container">
+            <div class="section-head reveal">
+                <div><span class="eyebrow">ENCUENTRA TU CAUSA</span><h2 data-i18n="op.title">Una oportunidad que encaje contigo.</h2></div>
+                <p data-i18n="op.text">Filtra por tiempo, modalidad o temática. Menos búsqueda, más acción.</p>
+            </div>
+            <div class="search-panel reveal">
+                <div class="search-main"><span>⌕</span><input id="searchInput" type="search" placeholder="Busca una oportunidad, causa u organización..." /></div>
+                <div class="chips" id="chips">
+                    <button class="chip active" data-filter="all">Todo</button>
+                    <button class="chip" data-filter="near">📍 Cerca de mí</button>
+                    <button class="chip" data-filter="short">⏱ Menos de 2 h</button>
+                    <button class="chip" data-filter="virtual">💻 Virtual</button>
+                    <button class="chip" data-filter="career">🎓 Mi carrera</button>
+                    <button class="chip" data-filter="green">🌱 Ambiente</button>
+                </div>
+            </div>
+            <div class="op-grid" id="opGrid">
+                <article class="op-card reveal" data-tags="near short green">
+                    <div class="op-image nature"><span>🌿</span><b>Presencial</b></div>
+                    <div class="op-body"><div class="op-meta"><span>EcoAcción Perú</span><span>4.9 ★</span></div><h3>Limpieza y recuperación de áreas verdes</h3><p>Participa en una jornada comunitaria para recuperar espacios públicos.</p><div class="op-data"><span>📍 Miraflores</span><span>⏱ 2 h</span><span>👥 12 vacantes</span></div><a href="#contacto">Ver oportunidad <b>→</b></a></div>
+                </article>
+                <article class="op-card reveal delay-1" data-tags="virtual short career">
+                    <div class="op-image education"><span>📚</span><b>Virtual</b></div>
+                    <div class="op-body"><div class="op-meta"><span>Educa Perú</span><span>4.8 ★</span></div><h3>Mentoría escolar para estudiantes</h3><p>Acompaña a escolares en tareas de matemática, comunicación o tecnología.</p><div class="op-data"><span>💻 Online</span><span>⏱ 1 h</span><span>👥 20 vacantes</span></div><a href="#contacto">Ver oportunidad <b>→</b></a></div>
+                </article>
+                <article class="op-card reveal delay-2" data-tags="near career">
+                    <div class="op-image community"><span>🤝</span><b>Híbrido</b></div>
+                    <div class="op-body"><div class="op-meta"><span>Manos Unidas</span><span>4.7 ★</span></div><h3>Campaña de inclusión digital</h3><p>Ayuda a adultos mayores a usar herramientas digitales de forma segura.</p><div class="op-data"><span>📍 San Borja</span><span>⏱ 3 h</span><span>👥 8 vacantes</span></div><a href="#contacto">Ver oportunidad <b>→</b></a></div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="section problem" id="problema">
+        <div class="container problem-grid">
+            <div class="problem-copy reveal"><span class="eyebrow light">EL PROBLEMA</span><h2 data-i18n="problem.title">Ayudar debería ser más sencillo.</h2><p data-i18n="problem.text">Muchas personas quieren participar, pero encuentran oportunidades dispersas, horarios rígidos o poca claridad. Las organizaciones, a su vez, necesitan voluntarios confiables y mejores herramientas para gestionarlos.</p><div class="big-stat"><strong>16%</strong><span>de la población en edad de trabajar participó en voluntariado en Perú durante 2023, según el dato citado en el proyecto.</span></div></div>
+            <div class="problem-cards">
+                <article class="dark-card reveal"><span>⏱</span><h3>Poco tiempo</h3><p>Los compromisos extensos chocan con horarios de estudio y trabajo.</p></article>
+                <article class="dark-card reveal delay-1"><span>🔎</span><h3>Información dispersa</h3><p>Las oportunidades suelen encontrarse entre redes, mensajes y canales separados.</p></article>
+                <article class="dark-card reveal delay-2"><span>🤝</span><h3>Gestión complicada</h3><p>Las ONG necesitan convocar, verificar y dar seguimiento con menos esfuerzo.</p></article>
+            </div>
+        </div>
+    </section>
+
+    <section class="section steps" id="como-funciona">
+        <div class="container">
+            <div class="center-head reveal"><span class="eyebrow">ASÍ DE SIMPLE</span><h2 data-i18n="steps.title">De “quiero ayudar” a impacto real.</h2><p data-i18n="steps.text">Una experiencia diseñada para que participar sea claro, flexible y motivador.</p></div>
+            <div class="steps-grid">
+                <article class="step reveal"><b>01</b><span>👤</span><h3>Crea tu perfil</h3><p>Indica tus intereses, carrera, ubicación y disponibilidad.</p></article>
+                <article class="step reveal delay-1"><b>02</b><span>✨</span><h3>Encuentra tu oportunidad</h3><p>Explora recomendaciones y filtros que se adapten a tu realidad.</p></article>
+                <article class="step reveal delay-2"><b>03</b><span>🤲</span><h3>Genera impacto</h3><p>Inscríbete y participa de forma presencial, virtual o híbrida.</p></article>
+                <article class="step reveal delay-3"><b>04</b><span>🏅</span><h3>Construye tu historial</h3><p>Acumula horas, logros, experiencia y certificados digitales.</p></article>
+            </div>
+        </div>
+    </section>
+
+    <section class="section adapt">
+        <div class="container adapt-grid">
+            <div class="adapt-copy reveal"><span class="eyebrow">FLEXIBILIDAD REAL</span><h2>No necesitas tener todo el día libre para generar impacto.</h2><p>BlockVoluntariado busca reducir la principal barrera detectada en estudiantes: el tiempo. Encuentra opciones que encajen con tu rutina, no al revés.</p><a class="btn btn-primary" href="#oportunidades">Encontrar una oportunidad →</a></div>
+            <div class="feature-grid">
+                <article class="feature-card reveal"><span>⚡</span><h3>Microvoluntariado</h3><p>Actividades cortas, concretas y de alto valor.</p></article>
+                <article class="feature-card reveal delay-1"><span>💻</span><h3>Desde cualquier lugar</h3><p>Oportunidades virtuales e híbridas.</p></article>
+                <article class="feature-card reveal"><span>📍</span><h3>Cerca de ti</h3><p>Descubre proyectos según tu ubicación.</p></article>
+                <article class="feature-card reveal delay-1"><span>🎓</span><h3>Para tu carrera</h3><p>Experiencias alineadas con tu formación.</p></article>
+                <article class="feature-card reveal"><span>❤️</span><h3>Según tus intereses</h3><p>Educación, salud, ambiente, inclusión y más.</p></article>
+                <article class="feature-card reveal delay-1"><span>✨</span><h3>Recomendado para ti</h3><p>Sugerencias a partir de tu perfil.</p></article>
+            </div>
+        </div>
+    </section>
+
+    <section class="section gamification" id="impacto">
+        <div class="container game-grid">
+            <div class="game-dashboard reveal">
+                <div class="dash-top"><div class="dash-avatar">DA</div><div><small>VOLUNTARIO ACTIVO</small><h3>Diego</h3></div><span>Nivel 7</span></div>
+                <div class="progress"><i style="width:82%"></i></div><small>820 / 1000 XP para el siguiente nivel</small>
+                <div class="dash-stats"><div><strong>48 h</strong><span>de impacto</span></div><div><strong>8</strong><span>proyectos</span></div><div><strong>5</strong><span>causas</span></div></div>
+                <div class="badge-row"><div>🌱<small>Guardián Verde</small></div><div>📚<small>Mentor</small></div><div>🤝<small>Agente del Cambio</small></div><div>🔥<small>Racha x5</small></div></div>
+            </div>
+            <div class="game-copy reveal delay-1"><span class="eyebrow light">TU IMPACTO, VISIBLE</span><h2>Cada acción cuenta. Y ahora puedes verla.</h2><p>Registra tus participaciones, visualiza horas acumuladas, desbloquea logros y construye un historial que refleje tu compromiso con las causas que te importan.</p><ul><li>🏆 Insignias y logros por participación</li><li>📊 Métricas de impacto personal</li><li>🔥 Retos mensuales y progresión</li><li>⭐ Reconocimiento de organizaciones</li></ul></div>
+        </div>
+    </section>
+
+    <section class="section certificate">
+        <div class="container certificate-grid">
+            <div class="certificate-copy reveal"><span class="eyebrow">CRECE MIENTRAS AYUDAS</span><h2>Tu compromiso también construye tu futuro.</h2><p>Cada experiencia completada puede convertirse en evidencia de tus habilidades, responsabilidad e impacto.</p><div class="check-list"><span>✓ Historial personal de voluntariados</span><span>✓ Certificados digitales</span><span>✓ Experiencia para tu perfil profesional</span><span>✓ Integración institucional proyectada</span></div></div>
+            <div class="certificate-card reveal delay-1"><div class="cert-brand"><span class="brand-mark small"><svg viewBox="0 0 64 64"><path d="M32 56C19 46 9 37 9 24.8 9 16.8 14.5 11 22.2 11c4.4 0 7.8 2 9.8 5.3C34 13 37.4 11 41.8 11 49.5 11 55 16.8 55 24.8 55 37 45 46 32 56Z" fill="currentColor"/></svg></span><b>BlockVoluntariado</b></div><span class="cert-label">CERTIFICADO DIGITAL</span><h3>Participación Voluntaria</h3><p>Se certifica que</p><strong class="cert-name">Diego Alexander</strong><p>completó satisfactoriamente</p><strong>24 horas de voluntariado</strong><div class="cert-line"></div><div class="cert-foot"><span>Emitido digitalmente</span><b>BV ✓</b></div></div>
+        </div>
+    </section>
+
+    <section class="section ngo" id="ongs">
+        <div class="container ngo-grid">
+            <div class="ngo-copy reveal"><span class="eyebrow light">PARA ORGANIZACIONES</span><h2>¿Necesitas personas dispuestas a ayudar?</h2><p>Centraliza la publicación, convocatoria y seguimiento de tus proyectos en una experiencia simple para tu equipo y tus voluntarios.</p><a href="#contacto" class="btn btn-white">Publicar un voluntariado →</a></div>
+            <div class="ngo-panel reveal delay-1"><div class="panel-title"><span>Panel ONG</span><b>Resumen general</b></div><div class="panel-stats"><div><i class="dot green"></i><strong>2</strong><small>Voluntariados activos</small></div><div><i class="dot orange"></i><strong>8</strong><small>Postulantes nuevos</small></div><div><i class="dot blue"></i><strong>24</strong><small>Voluntarios verificados</small></div></div><div class="panel-project"><div class="project-icon">🌳</div><div><strong>Limpieza pública</strong><small>12 postulantes · 6 cupos</small></div><button>Gestionar</button></div><div class="ngo-features"><span>📝 Publica convocatorias</span><span>✅ Verifica perfiles</span><span>👥 Gestiona postulantes</span><span>📊 Revisa resultados</span></div></div>
+        </div>
+    </section>
+
+    <section class="section wellbeing">
+        <div class="container wellbeing-grid">
+            <div class="well-visual reveal"><div class="well-card main"><span>🧠</span><h3>Bienestar del voluntario</h3><p>Tu impacto importa. Tu bienestar también.</p><div class="mood"><button>🙂</button><button>😐</button><button>😓</button></div></div><div class="well-card mini w1">💬 Acompañamiento</div><div class="well-card mini w2">🌿 Autocuidado</div><div class="well-card mini w3">🎓 Talleres</div></div>
+            <div class="well-copy reveal delay-1"><span class="eyebrow">UN DIFERENCIAL HUMANO</span><h2>Ayudar también significa cuidarte.</h2><p>El proyecto incorpora un componente de acompañamiento para prevenir frustración, estrés o desgaste emocional, especialmente en actividades sensibles.</p><div class="well-list"><article><b>01</b><span><strong>Talleres de autocuidado</strong><small>Preparación y herramientas para afrontar experiencias exigentes.</small></span></article><article><b>02</b><span><strong>Seguimiento emocional</strong><small>Espacios para identificar necesidades y orientar apoyo.</small></span></article><article><b>03</b><span><strong>Comunidad y motivación</strong><small>Reconocimiento, convivencia y retroalimentación positiva.</small></span></article></div></div>
+        </div>
+    </section>
+
+    <section class="section goals">
+        <div class="container">
+            <div class="center-head reveal"><span class="eyebrow">OBJETIVOS DEL PROYECTO</span><h2>El impacto que queremos construir.</h2><p>Metas planteadas en el Impact Mapping de BlockVoluntariado.</p></div>
+            <div class="goal-grid">
+                <article class="goal reveal"><strong class="counter" data-target="3000">0</strong><span>usuarios activos</span><small>meta para los primeros 7 meses</small></article>
+                <article class="goal reveal delay-1"><strong><span class="counter" data-target="30">0</span>%</strong><span>más participación</span><small>objetivo durante el primer año</small></article>
+                <article class="goal reveal delay-2"><strong>4.4 ★</strong><span>valoración promedio</span><small>meta para tiendas de aplicaciones</small></article>
+            </div>
+        </div>
+    </section>
+
+    <section class="section testimonials">
+        <div class="container"><div class="section-head reveal"><div><span class="eyebrow">VOCES QUE NOS GUIARON</span><h2>Diseñado escuchando a personas reales.</h2></div><p>El proyecto fue construido a partir de entrevistas a estudiantes, organizaciones y profesionales de psicología.</p></div><div class="testimonial-grid"><blockquote class="reveal"><div class="quote">“</div><p>El tiempo es una barrera importante. Una plataforma debería permitir encontrar actividades que se ajusten mejor a los horarios.</p><footer><span>🎓</span><div><strong>Perspectiva estudiantil</strong><small>Hallazgo de entrevistas</small></div></footer></blockquote><blockquote class="reveal delay-1"><div class="quote">“</div><p>Las organizaciones necesitan una mejor forma de dar seguimiento al historial y compromiso de sus voluntarios.</p><footer><span>🤝</span><div><strong>Perspectiva ONG</strong><small>Hallazgo de entrevistas</small></div></footer></blockquote><blockquote class="reveal delay-2"><div class="quote">“</div><p>El reconocimiento, la comunicación y los espacios de autocuidado ayudan a mantener la motivación y reducir el desgaste.</p><footer><span>🧠</span><div><strong>Perspectiva psicológica</strong><small>Hallazgo de entrevistas</small></div></footer></blockquote></div></div>
+    </section>
+
+    <section class="section about" id="nosotros">
+        <div class="container about-grid"><div class="about-copy reveal"><span class="eyebrow light">ALMAS EN ACCIÓN</span><h2>Tecnología construida para generar impacto.</h2><p>Somos un equipo universitario que busca modernizar la forma en que estudiantes y organizaciones se encuentran, colaboran y hacen visible el valor del voluntariado.</p><div class="about-actions"><a class="btn btn-white" href="#contacto">Conocer el proyecto</a><a class="text-link light-link" href="#contacto">About the Product ↗</a></div></div><div class="team-grid reveal delay-1"><article><span>BH</span><strong>Brayan Huerta</strong><small>Team Scrum</small></article><article><span>EH</span><strong>Eduardo Salvador</strong><small>Scrum Master</small></article><article><span>ST</span><strong>Sebastian Tavara</strong><small>Team Scrum</small></article><article><span>GT</span><strong>Ghorghet Tuncar</strong><small>Team Scrum</small></article></div></div>
+    </section>
+
+    <section class="section faq" id="faq">
+        <div class="container faq-grid"><div class="faq-intro reveal"><span class="eyebrow">PREGUNTAS FRECUENTES</span><h2>¿Tienes dudas?</h2><p>Aquí tienes respuestas rápidas sobre la propuesta de BlockVoluntariado.</p></div><div class="accordion reveal delay-1" id="accordion">
+            <article><button>¿BlockVoluntariado es gratuito?<span>+</span></button><div><p>El proyecto plantea un modelo con acceso para voluntarios y opciones de monetización orientadas principalmente a organizaciones y servicios de valor agregado.</p></div></article>
+            <article><button>¿Puedo participar si tengo poco tiempo?<span>+</span></button><div><p>Sí. Una de las ideas centrales es el microvoluntariado y el filtrado por duración, horario, modalidad y ubicación.</p></div></article>
+            <article><button>¿Hay voluntariados virtuales?<span>+</span></button><div><p>Sí. La propuesta contempla oportunidades presenciales, virtuales e híbridas.</p></div></article>
+            <article><button>¿Cómo se genera confianza entre voluntarios y ONG?<span>+</span></button><div><p>Mediante perfiles, validaciones, historial, calificaciones, comentarios y mecanismos de seguimiento planteados en el proyecto.</p></div></article>
+            <article><button>¿Puedo obtener certificados?<span>+</span></button><div><p>Sí. Los certificados digitales y el historial de participación forman parte de las funcionalidades propuestas.</p></div></article>
+            <article><button>¿Una ONG puede publicar convocatorias?<span>+</span></button><div><p>Sí. Las organizaciones cuentan con un flujo propio para crear proyectos, gestionar postulantes y hacer seguimiento.</p></div></article>
+        </div></div>
+    </section>
+
+    <section class="final-cta" id="contacto"><div class="container cta-card reveal"><div><span class="eyebrow light">EMPIEZA POR UNA CAUSA</span><h2>Una hora puede parecer poco.<br><span>Para alguien más puede significarlo todo.</span></h2><p>Descubre una oportunidad y convierte tu tiempo en impacto.</p></div><div class="cta-actions"><a class="btn btn-white btn-lg" href="#oportunidades">Encontrar mi voluntariado →</a><a class="text-link light-link" href="#ongs">Soy una ONG ↗</a></div></div></section>
+</main>
+
+<footer class="footer">
+    <div class="container footer-grid">
+        <div class="footer-brand"><a class="brand" href="#inicio"><span class="brand-mark"><svg viewBox="0 0 64 64"><path d="M32 56C19 46 9 37 9 24.8 9 16.8 14.5 11 22.2 11c4.4 0 7.8 2 9.8 5.3C34 13 37.4 11 41.8 11 49.5 11 55 16.8 55 24.8 55 37 45 46 32 56Z" fill="currentColor"/></svg></span><span>Block<span>Voluntariado</span></span></a><p>by AlmasEnAcción</p><small>Conectando tiempo, talento y causas que importan.</small></div>
+        <div><h4>Producto</h4><a href="#oportunidades">Explorar voluntariados</a><a href="#como-funciona">Cómo funciona</a><a href="#ongs">Para ONG</a><a href="#impacto">Impacto</a></div>
+        <div><h4>Comunidad</h4><a href="#impacto">Logros</a><a href="#faq">Preguntas frecuentes</a><a href="#nosotros">AlmasEnAcción</a><a href="#contacto">Contacto</a></div>
+        <div><h4>Proyecto</h4><a href="#nosotros">About the Team</a><a href="#nosotros">About the Product</a><a href="html/privacy.html">Privacidad</a><a href="html/terms.html">Términos</a></div>
+    </div>
+    <div class="container footer-bottom"><span>© 2026 BlockVoluntariado. Proyecto académico.</span><div><a href="#">Instagram</a><a href="#">TikTok</a><a href="#">LinkedIn</a><a href="#">YouTube</a></div></div>
+</footer>
+
+<button class="back-top" id="backTop" aria-label="Volver arriba">↑</button>
+<script src="js/script.js"></script>
+</body>
+</html>
