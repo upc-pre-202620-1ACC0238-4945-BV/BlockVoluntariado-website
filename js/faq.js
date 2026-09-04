@@ -1,0 +1,1 @@
+document.querySelectorAll('#accordion article button').forEach(btn=>btn.addEventListener('click',()=>{const item=btn.parentElement;document.querySelectorAll('#accordion article').forEach(other=>{if(other!==item)other.classList.remove('open')});item.classList.toggle('open')}));
