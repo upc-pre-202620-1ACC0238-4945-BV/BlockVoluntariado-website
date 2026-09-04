@@ -1,0 +1,10 @@
+/* Archivo principal: carga los estilos por componente. */
+@import url('./base.css');
+@import url('./sections.css');
+@import url('./header.css');
+@import url('./hero.css');
+@import url('./testimonials.css');
+@import url('./team.css');
+@import url('./faq.css');
+@import url('./music.css');
+@import url('./responsive.css');
