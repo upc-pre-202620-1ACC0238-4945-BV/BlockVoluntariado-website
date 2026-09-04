@@ -1,0 +1,10 @@
+/* Equipo: 3 integrantes con espacio editable para foto y descripción */
+.team-grid{grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:18px!important}
+.team-grid article{min-height:245px!important;padding:22px!important;display:flex!important;flex-direction:column;align-items:flex-start!important;justify-content:flex-end!important;position:relative;overflow:hidden;border:1px solid rgba(255,255,255,.16)!important}
+.team-grid article::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(0,0,0,.18));pointer-events:none}
+.team-avatar{width:64px!important;height:64px!important;min-width:64px;border-radius:20px!important;margin-bottom:auto!important;background:linear-gradient(135deg,#fff,#d9edf8)!important;color:var(--blue)!important;display:grid!important;place-items:center;font:800 1rem Manrope,Arial,sans-serif;box-shadow:0 10px 30px rgba(0,0,0,.15)}
+.team-grid article strong,.team-grid article small,.team-grid article p{position:relative;z-index:1}
+.team-grid article strong{font-size:1.08rem;margin-top:18px}
+.team-grid article small{color:#ffd2ad!important;font-weight:700!important;margin-top:3px}
+.team-grid article p{font-size:.82rem;color:#d7e7f0;margin-top:10px;line-height:1.5}
+.team-edit-hint{display:inline-flex;margin-top:8px;padding:5px 8px;border:1px dashed rgba(255,255,255,.3);border-radius:9px;font-size:.68rem;color:#bcd0dc!important}
