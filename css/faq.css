@@ -1,0 +1,5 @@
+/* FAQ */
+.accordion article{transition:background .2s ease,border-color .2s ease}
+.accordion article.open{background:#fbfdfe;border-color:#bad6e6}
+.accordion article button span{transition:transform .25s ease}
+.accordion article.open button span{transform:rotate(45deg)}
