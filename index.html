@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -24,8 +24,8 @@
         <div class="nav-links" id="navLinks">
             <a href="#oportunidades" data-i18n="nav.opportunities">Voluntariados</a>
             <a href="#como-funciona" data-i18n="nav.how">Cómo funciona</a>
-            <a href="#ongs" data-i18n="nav.ngo">Para ONG</a>
             <a href="#impacto" data-i18n="nav.impact">Impacto</a>
+            <a href="#ongs" data-i18n="nav.ngo">Para ONG</a>
             <a href="#nosotros" data-i18n="nav.about">Nosotros</a>
             <a href="#faq">FAQ</a>
         </div>
@@ -202,7 +202,29 @@
     </section>
 
     <section class="section about" id="nosotros">
-        <div class="container about-grid"><div class="about-copy reveal"><span class="eyebrow light">ALMAS EN ACCIÓN</span><h2>Tecnología construida para generar impacto.</h2><p>Somos un equipo universitario que busca modernizar la forma en que estudiantes y organizaciones se encuentran, colaboran y hacen visible el valor del voluntariado.</p><div class="about-actions"><a class="btn btn-white" href="#contacto">Conocer el proyecto</a><a class="text-link light-link" href="#contacto">About the Product ↗</a></div></div><div class="team-grid reveal delay-1"><article><span>BH</span><strong>Brayan Huerta</strong><small>Team Scrum</small></article><article><span>EH</span><strong>Eduardo Salvador</strong><small>Scrum Master</small></article><article><span>ST</span><strong>Sebastian Tavara</strong><small>Team Scrum</small></article><article><span>GT</span><strong>Ghorghet Tuncar</strong><small>Team Scrum</small></article></div></div>
+        <div class="container about-grid"><div class="about-copy reveal"><span class="eyebrow light">ALMAS EN ACCIÓN</span><h2>Tecnología construida para generar impacto.</h2><p>Somos un equipo universitario que busca modernizar la forma en que estudiantes y organizaciones se encuentran, colaboran y hacen visible el valor del voluntariado.</p><div class="about-actions"><a class="btn btn-white" href="#contacto">Conocer el proyecto</a><a class="text-link light-link" href="#contacto">About the Product ↗</a></div></div><div class="team-grid reveal delay-1">
+            <article>
+                <span class="team-avatar">DA</span>
+                <strong>Diego Alexander</strong>
+                <small>Integrante del equipo</small>
+                <p>Espacio reservado para tu descripción: carrera, rol en el proyecto, habilidades y aporte principal a BlockVoluntariado.</p>
+                <span class="team-edit-hint">✎ Edita esta descripción en index.html</span>
+            </article>
+            <article>
+                <span class="team-avatar">ST</span>
+                <strong>Sebastian Tavara</strong>
+                <small>Integrante del equipo</small>
+                <p>Espacio reservado para la descripción de Sebas: rol, fortalezas, responsabilidades y contribuciones dentro del proyecto.</p>
+                <span class="team-edit-hint">✎ Espacio editable</span>
+            </article>
+            <article>
+                <span class="team-avatar">GT</span>
+                <strong>Ghorghet Tuncar</strong>
+                <small>Integrante del equipo</small>
+                <p>Espacio reservado para la descripción de Ghorghet: perfil, rol, tecnologías y principales aportes a BlockVoluntariado.</p>
+                <span class="team-edit-hint">✎ Espacio editable</span>
+            </article>
+        </div></div>
     </section>
 
     <section class="section faq" id="faq">
@@ -226,10 +248,27 @@
         <div><h4>Comunidad</h4><a href="#impacto">Logros</a><a href="#faq">Preguntas frecuentes</a><a href="#nosotros">AlmasEnAcción</a><a href="#contacto">Contacto</a></div>
         <div><h4>Proyecto</h4><a href="#nosotros">About the Team</a><a href="#nosotros">About the Product</a><a href="html/privacy.html">Privacidad</a><a href="html/terms.html">Términos</a></div>
     </div>
-    <div class="container footer-bottom"><span>© 2026 BlockVoluntariado. Proyecto académico.</span><div><a href="#">Instagram</a><a href="#">TikTok</a><a href="#">LinkedIn</a><a href="#">YouTube</a></div></div>
+    <div class="container footer-bottom"><span>© <span id="currentYear">2026</span> BlockVoluntariado. Proyecto académico.</span><div><a href="#">Instagram</a><a href="#">TikTok</a><a href="#">LinkedIn</a><a href="#">YouTube</a></div></div>
 </footer>
 
+<div class="music-control">
+    <span class="music-hint">Música de la landing</span>
+    <button class="music-btn" id="musicBtn" type="button" aria-label="Reproducir música" title="Reproducir música">
+        <span class="music-off">♪</span><span class="music-on">❚❚</span>
+    </button>
+</div>
+<div class="music-toast" id="musicToast" role="status" aria-live="polite"></div>
+<audio id="landingMusic" preload="none" loop>
+    <source src="audio/landing-theme.mp3" type="audio/mpeg">
+</audio>
+
 <button class="back-top" id="backTop" aria-label="Volver arriba">↑</button>
-<script src="js/script.js"></script>
+<script src="js/navigation.js" defer></script>
+<script src="js/reveal.js" defer></script>
+<script src="js/search.js" defer></script>
+<script src="js/faq.js" defer></script>
+<script src="js/i18n.js" defer></script>
+<script src="js/audio.js" defer></script>
+<script src="js/main.js" defer></script>
 </body>
 </html>
