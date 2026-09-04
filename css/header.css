@@ -1,0 +1,8 @@
+/* Header / navegación */
+.site-header .nav{transition:height .25s ease}
+.site-header.scrolled .nav{height:70px}
+.site-header.scrolled .brand-mark{transform:scale(.94)}
+.brand-mark{transition:transform .25s ease}
+.nav-links a{position:relative}
+.nav-links a::after{content:"";position:absolute;left:0;right:100%;bottom:-8px;height:2px;background:linear-gradient(90deg,var(--orange),var(--blue2));transition:right .25s ease}
+.nav-links a:hover::after{right:0}

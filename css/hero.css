@@ -1,0 +1,6 @@
+/* Hero y profundidad visual */
+.hero::before{content:"";position:absolute;inset:0;background-image:radial-gradient(circle at 20% 20%,rgba(2,78,130,.07) 0 1px,transparent 1px);background-size:24px 24px;mask-image:linear-gradient(to bottom,#000,transparent 75%);pointer-events:none}
+.hero-copy h1 span{background:linear-gradient(100deg,var(--blue),#078bcf);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero-visual::after{content:"";position:absolute;width:430px;height:70px;bottom:10px;background:rgba(3,37,60,.16);filter:blur(25px);border-radius:50%;z-index:-1}
+.phone{transition:transform .45s ease,box-shadow .45s ease}
+.hero-visual:hover .phone{transform:rotate(0deg) translateY(-6px);box-shadow:0 48px 95px rgba(9,38,58,.28)}
