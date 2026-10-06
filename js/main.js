@@ -1,1 +1,5 @@
-document.addEventListener('DOMContentLoaded',()=>{const year=document.getElementById('currentYear');if(year)year.textContent=new Date().getFullYear();console.info('BlockVoluntariado Landing Page cargada.');});
+document.addEventListener('DOMContentLoaded',()=>{
+    const year=document.getElementById('currentYear');
+    if(year)year.textContent=new Date().getFullYear();
+    console.info('BlockVoluntariado Landing Page cargada.');
+});
