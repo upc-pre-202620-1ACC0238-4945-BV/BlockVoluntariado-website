@@ -796,9 +796,6 @@ html[data-theme="dark"] .team-grid p {
     color: #91a8b4;
 }
 
-html[data-theme="dark"] .team-edit-hint {
-    color: #69c4ef;
-}
 
 html[data-theme="dark"] .team-avatar {
     background: #173b4d;
@@ -934,4 +931,87 @@ html[data-theme="dark"] select {
 html[data-theme="dark"] ::selection {
     background: rgba(91, 188, 233, 0.35);
     color: #ffffff;
+}
+
+/* =========================================================
+   FINAL HEADER + FAQ DARK-MODE FIXES
+   ========================================================= */
+
+html[data-theme="dark"] .accordion article {
+    background: #10232d;
+    border-color: #294653;
+}
+
+html[data-theme="dark"] .accordion article:hover,
+html[data-theme="dark"] .accordion article.open {
+    background: #132a35;
+    border-color: #3b6072;
+}
+
+html[data-theme="dark"] .accordion article button {
+    color: #eef7fb;
+}
+
+html[data-theme="dark"] .faq-plus {
+    background: #183646;
+    color: #78cef5;
+}
+
+html[data-theme="dark"] .accordion article.open .faq-plus {
+    background: #1d4254;
+}
+
+html[data-theme="dark"] .faq-answer > p {
+    color: #9db3be;
+}
+
+/* =========================================================
+   V6 HEADER + FAQ FINAL OVERRIDES
+   ========================================================= */
+
+html[data-theme="dark"] .site-header .lang-switch {
+    background: #0d202a;
+    border-color: #294452;
+}
+
+html[data-theme="dark"] .site-header .lang-option {
+    color: #a9bdc7;
+}
+
+html[data-theme="dark"] .site-header .lang-option:hover {
+    color: #ffffff;
+}
+
+html[data-theme="dark"] .site-header .lang-option.active {
+    background: linear-gradient(135deg, #57b8e9, #76cff7);
+    color: #06202c;
+    box-shadow: 0 5px 16px rgba(89, 184, 237, 0.25);
+}
+
+html[data-theme="dark"] .site-header .theme-btn {
+    background: #0d202a;
+    color: #f5fbff;
+    border-color: #294452;
+}
+
+html[data-theme="dark"] .site-header .theme-btn:hover {
+    background: #17303c;
+}
+
+html[data-theme="dark"] .site-header .nav-links a {
+    color: #c6d6df;
+}
+
+html[data-theme="dark"] .site-header .nav-links a:hover {
+    color: #ffffff;
+}
+
+html[data-theme="dark"] .accordion article button .faq-question,
+html[data-theme="dark"] .accordion article.open button .faq-question {
+    color: #eef7fb;
+    transform: none !important;
+}
+
+html[data-theme="dark"] .accordion article.open .faq-plus {
+    transform: rotate(45deg) !important;
 }

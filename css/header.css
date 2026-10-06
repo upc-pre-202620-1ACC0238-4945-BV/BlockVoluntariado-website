@@ -1,8 +1,387 @@
-/* Header / navegación */
-.site-header .nav{transition:height .25s ease}
-.site-header.scrolled .nav{height:70px}
-.site-header.scrolled .brand-mark{transform:scale(.94)}
-.brand-mark{transition:transform .25s ease}
-.nav-links a{position:relative}
-.nav-links a::after{content:"";position:absolute;left:0;right:100%;bottom:-8px;height:2px;background:linear-gradient(90deg,var(--orange),var(--blue2));transition:right .25s ease}
-.nav-links a:hover::after{right:0}
+/* =========================================================
+   HEADER / NAVIGATION
+   One-row desktop layout
+   ========================================================= */
+
+.site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 50;
+    transition:
+        background-color 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.site-header .container {
+    width: min(1320px, calc(100% - 28px));
+}
+
+.site-header .nav {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    min-height: 82px;
+    white-space: nowrap;
+    transition: min-height 0.25s ease;
+}
+
+.site-header.scrolled {
+    background: rgba(255, 255, 255, 0.94);
+    border-bottom: 1px solid rgba(16, 36, 51, 0.07);
+    backdrop-filter: blur(18px);
+    box-shadow: 0 8px 30px rgba(11, 46, 69, 0.08);
+}
+
+.site-header.scrolled .nav {
+    min-height: 70px;
+}
+
+/* =========================================================
+   BRAND
+   ========================================================= */
+
+.site-header .brand {
+    flex: 0 0 auto;
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    margin-right: 6px;
+}
+
+.site-header .brand-mark {
+    transition: transform 0.25s ease;
+}
+
+.site-header.scrolled .brand-mark {
+    transform: scale(0.94);
+}
+
+/* =========================================================
+   MAIN LINKS
+   ========================================================= */
+
+.site-header .nav-links {
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: clamp(11px, 1.15vw, 20px);
+    min-width: 0;
+    margin: 0;
+}
+
+.site-header .nav-links a {
+    position: relative;
+    flex: 0 0 auto;
+    color: #324b5c;
+    font-size: clamp(0.73rem, 0.76vw, 0.84rem);
+    font-weight: 700;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.site-header .nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 100%;
+    bottom: -8px;
+    height: 2px;
+    border-radius: 999px;
+    background: linear-gradient(90deg, var(--orange), var(--blue2));
+    transition: right 0.25s ease;
+}
+
+.site-header .nav-links a:hover {
+    color: var(--orange);
+}
+
+.site-header .nav-links a:hover::after {
+    right: 0;
+}
+
+/* =========================================================
+   RIGHT-SIDE CONTROLS
+   ========================================================= */
+
+.site-header .nav-actions {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-left: auto;
+}
+
+.site-header .nav-actions .btn {
+    flex: 0 0 auto;
+}
+
+.site-header .nav-actions .btn-ghost {
+    padding-left: 13px;
+    padding-right: 13px;
+}
+
+.site-header .nav-actions .btn-primary {
+    padding-left: 18px;
+    padding-right: 18px;
+}
+
+/* =========================================================
+   LANGUAGE BUTTONS
+   ========================================================= */
+
+.site-header .lang-switch {
+    display: inline-flex;
+    align-items: center;
+    gap: 3px;
+    padding: 4px;
+    border: 1px solid #d7e4eb;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 5px 16px rgba(11, 46, 69, 0.06);
+}
+
+.site-header .lang-option {
+    min-width: 36px;
+    height: 32px;
+    padding: 0 9px;
+    border: 0;
+    border-radius: 999px;
+    background: transparent;
+    color: #617785;
+    font: inherit;
+    font-size: 0.74rem;
+    font-weight: 800;
+    cursor: pointer;
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease,
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.site-header .lang-option:hover {
+    color: var(--blue);
+    transform: translateY(-1px);
+}
+
+.site-header .lang-option.active {
+    background: linear-gradient(135deg, var(--blue), var(--blue2));
+    color: #ffffff;
+    box-shadow: 0 5px 14px rgba(2, 78, 130, 0.22);
+}
+
+/* =========================================================
+   THEME BUTTON
+   ========================================================= */
+
+.site-header .theme-btn {
+    position: relative;
+    display: inline-grid;
+    place-items: center;
+    flex: 0 0 auto;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border: 1px solid #d7e4eb;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.9);
+    color: #173c50;
+    font: inherit;
+    cursor: pointer;
+    box-shadow: 0 5px 16px rgba(11, 46, 69, 0.06);
+    transition:
+        transform 0.2s ease,
+        background-color 0.2s ease,
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.site-header .theme-btn:hover {
+    transform: translateY(-1px);
+    background: #f3f8fb;
+    box-shadow: 0 8px 18px rgba(11, 46, 69, 0.09);
+}
+
+.site-header .theme-icon {
+    position: absolute;
+    font-size: 1rem;
+    line-height: 1;
+}
+
+.site-header .theme-sun {
+    display: none;
+}
+
+html[data-theme="dark"] .site-header .theme-moon {
+    display: none;
+}
+
+html[data-theme="dark"] .site-header .theme-sun {
+    display: inline;
+}
+
+/* =========================================================
+   MENU BUTTON
+   Desktop: hidden
+   ========================================================= */
+
+.site-header .menu-btn {
+    display: none;
+    flex: 0 0 auto;
+}
+
+/* =========================================================
+   COMPACT DESKTOP
+   Keep everything in one row as long as there is enough room.
+   ========================================================= */
+
+@media (max-width: 1260px) {
+    .site-header .container {
+        width: min(1220px, calc(100% - 24px));
+    }
+
+    .site-header .nav {
+        gap: 12px;
+    }
+
+    .site-header .nav-links {
+        gap: 10px;
+    }
+
+    .site-header .nav-links a {
+        font-size: 0.72rem;
+    }
+
+    .site-header .nav-actions {
+        gap: 6px;
+    }
+
+    .site-header .lang-option {
+        min-width: 32px;
+        height: 30px;
+        padding: 0 7px;
+        font-size: 0.7rem;
+    }
+
+    .site-header .theme-btn {
+        width: 36px;
+        height: 36px;
+    }
+
+    .site-header .nav-actions .btn {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 0.76rem;
+    }
+
+    .site-header .nav-actions .btn-ghost {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .site-header .nav-actions .btn-primary {
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+}
+
+/* =========================================================
+   TABLET / MOBILE
+   Only here do we collapse into the hamburger menu.
+   ========================================================= */
+
+@media (max-width: 1110px) {
+    .site-header .nav {
+        gap: 10px;
+    }
+
+    .site-header .nav-links {
+        position: fixed;
+        top: 82px;
+        left: 20px;
+        right: 20px;
+        z-index: 60;
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 4px;
+        padding: 18px;
+        border: 1px solid var(--line);
+        border-radius: 20px;
+        background: #ffffff;
+        box-shadow: var(--shadow);
+        white-space: normal;
+    }
+
+    .site-header .nav-links.open {
+        display: flex;
+    }
+
+    .site-header .nav-links a {
+        width: 100%;
+        padding: 11px 12px;
+        border-radius: 12px;
+        font-size: 0.92rem;
+    }
+
+    .site-header .nav-links a::after {
+        display: none;
+    }
+
+    .site-header .nav-links a:hover {
+        background: #f3f8fb;
+    }
+
+    .site-header .menu-btn {
+        display: block;
+        margin-left: auto;
+    }
+
+    .site-header .nav-actions {
+        margin-left: 0;
+    }
+
+    .site-header .nav-actions .btn {
+        display: none;
+    }
+}
+
+@media (max-width: 700px) {
+    .site-header .container {
+        width: min(100% - 20px, 1320px);
+    }
+
+    .site-header .nav {
+        min-height: 70px;
+    }
+
+    .site-header .nav-links {
+        top: 70px;
+        left: 12px;
+        right: 12px;
+    }
+
+    .site-header .brand {
+        margin-right: 0;
+    }
+
+    .site-header .lang-switch {
+        padding: 3px;
+    }
+
+    .site-header .lang-option {
+        min-width: 31px;
+        height: 29px;
+        padding: 0 7px;
+        font-size: 0.69rem;
+    }
+
+    .site-header .theme-btn {
+        width: 35px;
+        height: 35px;
+    }
+}

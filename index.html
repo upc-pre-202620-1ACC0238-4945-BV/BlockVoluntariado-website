@@ -10,9 +10,17 @@
     <link href="https://fonts.googleapis.com" rel="preconnect"/>
     <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
     <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600;700&amp;family=Manrope:wght@500;600;700;800&amp;display=swap" rel="stylesheet"/>
-    <link href="css/styles.css" rel="stylesheet"/>
+    <link href="css/styles.css?v=7" rel="stylesheet"/>
     <script>
-        (()=>{try{const saved=localStorage.getItem('bv-theme');const theme=saved||'light';document.documentElement.dataset.theme=theme;}catch(e){document.documentElement.dataset.theme='light';}})();
+        (() => {
+            try {
+                const saved = localStorage.getItem('bv-theme');
+                const theme = saved || 'light';
+                document.documentElement.dataset.theme = theme;
+            } catch (error) {
+                document.documentElement.dataset.theme = 'light';
+            }
+        })();
     </script>
 </head>
 <body>
@@ -30,7 +38,7 @@
       </svg>
      </span>
             <span>
-      Blck
+      Block
       <span>
        Voluntariado
       </span>
@@ -63,9 +71,12 @@
             <a href="#faq">
                 FAQ
             </a>
+            <a data-i18n="t179" href="#contacto">
+                Contact
+            </a>
         </div>
         <div class="nav-actions">
-            <div aria-label="Language" class="lang-switch" role="group">
+            <div aria-label="Language selector" class="lang-switch" role="group">
                 <button aria-pressed="true" class="lang-option active" data-lang="en" type="button">
                     EN
                 </button>
@@ -73,7 +84,7 @@
                     ES
                 </button>
             </div>
-            <button aria-label="Switch to dark mode" class="theme-btn" id="themeBtn" title="Dark mode" type="button">
+            <button aria-label="Switch to dark mode" aria-pressed="false" class="theme-btn" id="themeBtn" title="Dark mode" type="button">
       <span aria-hidden="true" class="theme-icon theme-moon">
        ☾
       </span>
@@ -263,37 +274,6 @@
                         </strong>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="hero-strip">
-            <div class="container strip-inner">
-      <span data-i18n="t30">
-       MICRO-VOLUNTEERING
-      </span>
-                <i>
-                    &bull;
-                </i>
-                <span data-i18n="t31">
-       SOCIAL IMPACT
-      </span>
-                <i>
-                    &bull;
-                </i>
-                <span data-i18n="t32">
-       COMMUNITY
-      </span>
-                <i>
-                    &bull;
-                </i>
-                <span data-i18n="t33">
-       WELLBEING
-      </span>
-                <i>
-                    &bull;
-                </i>
-                <span data-i18n="t34">
-       EXPERIENCE
-      </span>
             </div>
         </div>
     </section>
@@ -1193,9 +1173,9 @@
                 </div>
             </div>
             <div class="team-grid reveal delay-1">
-                <article>
-       <span class="team-avatar">
-        DA
+                <article class="team-card">
+       <span aria-hidden="true" class="team-avatar">
+        DC
        </span>
                     <strong>
                         Diego Cabrejos
@@ -1204,14 +1184,11 @@
                         Team member
                     </small>
                     <p data-i18n="t149">
-                        Ingeniero de software, experto en creacion de sitios webs y dominio en estructura DDD, desarrollador independiente, actualmente colaborando en empresas como WarMath, AuraSite y BlogVoluntariado.
+                        Software Engineer focused on web development and DDD architecture. Independent developer currently collaborating on projects such as WarMath, AuraSite and BlockVoluntariado.
                     </p>
-                    <span class="team-edit-hint" data-i18n="t150">
-        ✎ Edit this description in index.html
-       </span>
                 </article>
-                <article>
-       <span class="team-avatar">
+                <article class="team-card">
+       <span aria-hidden="true" class="team-avatar">
         ST
        </span>
                     <strong>
@@ -1221,14 +1198,11 @@
                         Team member
                     </small>
                     <p data-i18n="t151">
-                        Ingeniero de Software con amplios conocimiento en la rama de creacion de aplicacion de dispositivos moviles, desarrollador independiente, actualmente colaborando en empresas como WarMath, AuraSite y BlogVoluntariado.
+                        Software Engineer focused on mobile application development. Independent developer currently collaborating on projects such as WarMath, AuraSite and BlockVoluntariado.
                     </p>
-                    <span class="team-edit-hint" data-i18n="t152">
-        ✎ Editable space
-       </span>
                 </article>
-                <article>
-       <span class="team-avatar">
+                <article class="team-card">
+       <span aria-hidden="true" class="team-avatar">
         GT
        </span>
                     <strong>
@@ -1238,11 +1212,8 @@
                         Team member
                     </small>
                     <p data-i18n="t153">
-                        Ingeniero de Software experto en la organizacion y desarrollo de aplicaciones en android, desarrollador independiente, actualmente colaborando en empresas como WarMath, AuraSite y BlogVoluntariado.
+                        Software Engineer focused on the organization and development of Android applications. Independent developer currently collaborating on projects such as WarMath, AuraSite and BlockVoluntariado.
                     </p>
-                    <span class="team-edit-hint" data-i18n="t152">
-        ✎ Editable space
-       </span>
                 </article>
             </div>
         </div>
@@ -1262,78 +1233,90 @@
             </div>
             <div class="accordion reveal delay-1" id="accordion">
                 <article>
-                    <button>
-                        &iquest;BlockVoluntariado es gratuito?
-                        <span>
+                    <button aria-expanded="false" type="button">
+        <span class="faq-question" data-i18n="t157">
+         Is BlockVoluntariado free?
+        </span>
+                        <span aria-hidden="true" class="faq-plus">
          +
         </span>
                     </button>
-                    <div data-i18n="t158">
+                    <div class="faq-answer">
                         <p data-i18n="t158">
                             The project proposes access for volunteers with monetization options mainly focused on organizations and value-added services.
                         </p>
                     </div>
                 </article>
                 <article>
-                    <button>
-                        &iquest;Puedo participar si tengo poco tiempo?
-                        <span>
+                    <button aria-expanded="false" type="button">
+        <span class="faq-question" data-i18n="t159">
+         Can I participate if I have little time?
+        </span>
+                        <span aria-hidden="true" class="faq-plus">
          +
         </span>
                     </button>
-                    <div data-i18n="t160">
+                    <div class="faq-answer">
                         <p data-i18n="t160">
                             Yes. One of the core ideas is micro-volunteering with filters for duration, schedule, format and location.
                         </p>
                     </div>
                 </article>
                 <article>
-                    <button>
-                        &iquest;Hay voluntariados virtuales?
-                        <span>
+                    <button aria-expanded="false" type="button">
+        <span class="faq-question" data-i18n="t161">
+         Are there virtual volunteering opportunities?
+        </span>
+                        <span aria-hidden="true" class="faq-plus">
          +
         </span>
                     </button>
-                    <div data-i18n="t162">
+                    <div class="faq-answer">
                         <p data-i18n="t162">
                             Yes. The proposal includes in-person, virtual and hybrid opportunities.
                         </p>
                     </div>
                 </article>
                 <article>
-                    <button>
-                        &iquest;C&oacute;mo se genera confianza entre voluntarios y ONG?
-                        <span>
+                    <button aria-expanded="false" type="button">
+        <span class="faq-question" data-i18n="t163">
+         How is trust created between volunteers and NGOs?
+        </span>
+                        <span aria-hidden="true" class="faq-plus">
          +
         </span>
                     </button>
-                    <div data-i18n="t164">
+                    <div class="faq-answer">
                         <p data-i18n="t164">
                             Through profiles, verification, history, ratings, comments and follow-up mechanisms proposed in the project.
                         </p>
                     </div>
                 </article>
                 <article>
-                    <button>
-                        &iquest;Puedo obtener certificados?
-                        <span>
+                    <button aria-expanded="false" type="button">
+        <span class="faq-question" data-i18n="t165">
+         Can I get certificates?
+        </span>
+                        <span aria-hidden="true" class="faq-plus">
          +
         </span>
                     </button>
-                    <div data-i18n="t166">
+                    <div class="faq-answer">
                         <p data-i18n="t166">
                             Yes. Digital certificates and participation history are part of the proposed features.
                         </p>
                     </div>
                 </article>
                 <article>
-                    <button>
-                        &iquest;Una ONG puede publicar convocatorias?
-                        <span>
+                    <button aria-expanded="false" type="button">
+        <span class="faq-question" data-i18n="t167">
+         Can an NGO post opportunities?
+        </span>
+                        <span aria-hidden="true" class="faq-plus">
          +
         </span>
                     </button>
-                    <div data-i18n="t168">
+                    <div class="faq-answer">
                         <p data-i18n="t168">
                             Yes. Organizations have their own flow to create projects, manage applicants and follow up.
                         </p>
@@ -1509,3 +1492,4 @@
 </script>
 </body>
 </html>
+
