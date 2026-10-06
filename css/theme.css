@@ -1,0 +1,937 @@
+/* =========================================================
+   BLOCKVOLUNTARIADO - THEME.CSS
+   Dark mode overrides
+   ========================================================= */
+
+/* ---------- DARK THEME VARIABLES ---------- */
+
+html[data-theme="dark"] {
+    color-scheme: dark;
+
+    --ink: #eef6fb;
+    --muted: #9eb3bf;
+    --line: #263b48;
+    --bg: #08151d;
+    --white: #10212b;
+    --cream: #151f26;
+
+    --blue: #59b8ed;
+    --blue2: #7cccf5;
+    --blue3: #06131c;
+
+    --orange: #ff922f;
+}
+
+/* =========================================================
+   GLOBAL
+   ========================================================= */
+
+html[data-theme="dark"],
+html[data-theme="dark"] body {
+    background: #08151d;
+    color: #eef6fb;
+}
+
+html[data-theme="dark"] body {
+    transition:
+            background-color 0.3s ease,
+            color 0.3s ease;
+}
+
+html[data-theme="dark"] .section {
+    color: #eef6fb;
+}
+
+html[data-theme="dark"] p,
+html[data-theme="dark"] small {
+    color: #9eb3bf;
+}
+
+html[data-theme="dark"] .section-head h2,
+html[data-theme="dark"] .center-head h2 {
+    color: #f3f9fc;
+}
+
+html[data-theme="dark"] .section-head p,
+html[data-theme="dark"] .center-head p {
+    color: #99afbb;
+}
+
+html[data-theme="dark"] .eyebrow {
+    color: #ff922f;
+}
+
+html[data-theme="dark"] .eyebrow.light {
+    color: #ffad65;
+}
+
+html[data-theme="dark"] .noise {
+    opacity: 0.025;
+}
+
+/* =========================================================
+   HEADER / NAVBAR
+   ========================================================= */
+
+html[data-theme="dark"] .site-header {
+    background: rgba(5, 16, 23, 0.92);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.22);
+    backdrop-filter: blur(18px);
+}
+
+html[data-theme="dark"] .brand {
+    color: #f5fbff;
+}
+
+html[data-theme="dark"] .brand > span:last-child > span {
+    color: #ff922f;
+}
+
+html[data-theme="dark"] .brand-mark {
+    color: #ff922f;
+}
+
+html[data-theme="dark"] .nav-links a {
+    color: #c6d6df;
+}
+
+html[data-theme="dark"] .nav-links a:hover {
+    color: #ffffff;
+}
+
+html[data-theme="dark"] .btn-ghost {
+    color: #dbe8ee;
+    border-color: rgba(255, 255, 255, 0.12);
+}
+
+html[data-theme="dark"] .btn-ghost:hover {
+    background: rgba(255, 255, 255, 0.07);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Language selector */
+
+html[data-theme="dark"] .lang-switch {
+    background: #0d202a;
+    border: 1px solid #294452;
+}
+
+html[data-theme="dark"] .lang-option {
+    color: #9fb5c0;
+}
+
+html[data-theme="dark"] .lang-option:hover {
+    color: #ffffff;
+}
+
+html[data-theme="dark"] .lang-option.active {
+    background: #62c1ef;
+    color: #08202d;
+    box-shadow: 0 4px 14px rgba(89, 184, 237, 0.3);
+}
+
+/* Theme button */
+
+html[data-theme="dark"] .theme-btn {
+    background: #0d202a;
+    color: #f7fbff;
+    border-color: #294452;
+}
+
+html[data-theme="dark"] .theme-btn:hover {
+    background: #17303c;
+}
+
+/* Mobile navigation */
+
+html[data-theme="dark"] .menu-btn span {
+    background: #f4fbff;
+}
+
+html[data-theme="dark"] .nav-links.open {
+    background: #0c1d26;
+    border-color: #29414f;
+    box-shadow: 0 24px 55px rgba(0, 0, 0, 0.35);
+}
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+html[data-theme="dark"] .hero {
+    background:
+            radial-gradient(
+                    circle at 20% 10%,
+                    rgba(67, 166, 221, 0.18),
+                    transparent 32%
+            ),
+            radial-gradient(
+                    circle at 82% 28%,
+                    rgba(255, 138, 36, 0.12),
+                    transparent 28%
+            ),
+            linear-gradient(
+                    180deg,
+                    #0a1821 0%,
+                    #0b1c26 100%
+            );
+}
+
+html[data-theme="dark"] .hero-copy h1 {
+    color: #f6fbff;
+}
+
+html[data-theme="dark"] .hero-copy p {
+    color: #aec2cd;
+}
+
+html[data-theme="dark"] .trust-row span,
+html[data-theme="dark"] .trust-row em {
+    color: #bdd0d9;
+}
+
+html[data-theme="dark"] .phone {
+    background: #0e202a;
+    border-color: #2b4654;
+    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.42);
+}
+
+html[data-theme="dark"] .phone-bar,
+html[data-theme="dark"] .app-head {
+    color: #dfeaf0;
+}
+
+html[data-theme="dark"] .app-copy small {
+    color: #8fa9b6;
+}
+
+html[data-theme="dark"] .app-copy h3 {
+    color: #eef7fb;
+}
+
+html[data-theme="dark"] .app-search {
+    background: #152c37;
+    color: #98afbb;
+    border-color: #294653;
+}
+
+html[data-theme="dark"] .app-card {
+    background: #142934;
+    border-color: #294653;
+    color: #eff8fc;
+}
+
+html[data-theme="dark"] .app-card small,
+html[data-theme="dark"] .app-card p {
+    color: #8fa9b6;
+}
+
+html[data-theme="dark"] .app-card button {
+    background: #58b8e9;
+    color: #06202c;
+}
+
+html[data-theme="dark"] .app-bottom {
+    border-color: #294653;
+    color: #88a5b3;
+}
+
+html[data-theme="dark"] .float-card {
+    background: #10232d;
+    color: #eff8fc;
+    border: 1px solid #294653;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+}
+
+html[data-theme="dark"] .float-card small {
+    color: #8fa8b4;
+}
+
+html[data-theme="dark"] .hero-strip {
+    background: #07141c;
+    border-color: rgba(255, 255, 255, 0.07);
+}
+
+html[data-theme="dark"] .hero-strip span {
+    color: #a9bdc7;
+}
+
+html[data-theme="dark"] .hero-strip i {
+    color: #ff922f;
+}
+
+/* =========================================================
+   OPPORTUNITIES / SEARCH
+   ========================================================= */
+
+html[data-theme="dark"] .opportunities {
+    background: #091821;
+}
+
+html[data-theme="dark"] .search-panel {
+    background: #0f222c;
+    border-color: #294653;
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.24);
+}
+
+html[data-theme="dark"] .search-main {
+    background: #142a35;
+    border-color: #2a4653;
+}
+
+html[data-theme="dark"] .search-main input {
+    background: transparent;
+    color: #eef7fb;
+}
+
+html[data-theme="dark"] .search-main input::placeholder {
+    color: #79929f;
+}
+
+html[data-theme="dark"] .chip {
+    background: #142a35;
+    color: #b8ccd6;
+    border-color: #2b4654;
+}
+
+html[data-theme="dark"] .chip:hover {
+    border-color: #4ba8d7;
+    color: #edf8fd;
+}
+
+html[data-theme="dark"] .chip.active {
+    background: #57b8e9;
+    border-color: #57b8e9;
+    color: #07202b;
+}
+
+html[data-theme="dark"] .op-card {
+    background: #10232d;
+    border-color: #294653;
+    box-shadow: 0 18px 42px rgba(0, 0, 0, 0.22);
+}
+
+html[data-theme="dark"] .op-card:hover {
+    border-color: #3f6475;
+    box-shadow: 0 24px 55px rgba(0, 0, 0, 0.3);
+}
+
+html[data-theme="dark"] .op-body h3 {
+    color: #eef8fc;
+}
+
+html[data-theme="dark"] .op-body p,
+html[data-theme="dark"] .op-meta,
+html[data-theme="dark"] .op-data {
+    color: #95acb8;
+}
+
+html[data-theme="dark"] .op-body a {
+    color: #76c9f2;
+}
+
+/* =========================================================
+   PROBLEM
+   ========================================================= */
+
+html[data-theme="dark"] .problem {
+    background:
+            radial-gradient(
+                    circle at 20% 20%,
+                    rgba(76, 178, 232, 0.14),
+                    transparent 30%
+            ),
+            #06141c;
+}
+
+html[data-theme="dark"] .problem-copy h2 {
+    color: #ffffff;
+}
+
+html[data-theme="dark"] .problem-copy p,
+html[data-theme="dark"] .big-stat span {
+    color: #b8cbd5;
+}
+
+html[data-theme="dark"] .big-stat strong {
+    color: #ff9c44;
+}
+
+html[data-theme="dark"] .dark-card {
+    background: #0d222c;
+    border-color: #294653;
+    box-shadow: 0 16px 38px rgba(0, 0, 0, 0.22);
+}
+
+html[data-theme="dark"] .dark-card h3 {
+    color: #f2f8fb;
+}
+
+html[data-theme="dark"] .dark-card p {
+    color: #95acb8;
+}
+
+/* =========================================================
+   STEPS
+   ========================================================= */
+
+html[data-theme="dark"] .steps {
+    background: #0a1922;
+}
+
+html[data-theme="dark"] .step {
+    background: #10232d;
+    border-color: #294653;
+}
+
+html[data-theme="dark"] .step:hover {
+    border-color: #406373;
+}
+
+html[data-theme="dark"] .step b {
+    color: #63bee9;
+}
+
+html[data-theme="dark"] .step h3 {
+    color: #f2f8fb;
+}
+
+html[data-theme="dark"] .step p {
+    color: #96adb8;
+}
+
+/* =========================================================
+   ADAPT / FEATURES
+   ========================================================= */
+
+html[data-theme="dark"] .adapt {
+    background: #081720;
+}
+
+html[data-theme="dark"] .adapt-copy h2 {
+    color: #f2f9fc;
+}
+
+html[data-theme="dark"] .adapt-copy p {
+    color: #9eb4bf;
+}
+
+html[data-theme="dark"] .feature-card {
+    background: #10232d;
+    border-color: #294653;
+}
+
+html[data-theme="dark"] .feature-card:hover {
+    background: #132a35;
+    border-color: #406373;
+}
+
+html[data-theme="dark"] .feature-card h3 {
+    color: #eef7fb;
+}
+
+html[data-theme="dark"] .feature-card p {
+    color: #93aab6;
+}
+
+/* =========================================================
+   GAMIFICATION / IMPACT
+   ========================================================= */
+
+html[data-theme="dark"] .gamification {
+    background:
+            radial-gradient(
+                    circle at 75% 30%,
+                    rgba(255, 137, 36, 0.11),
+                    transparent 30%
+            ),
+            linear-gradient(135deg, #06131b, #0c2634);
+}
+
+html[data-theme="dark"] .game-dashboard {
+    background: #10232d;
+    border-color: #2a4653;
+    color: #eef7fb;
+    box-shadow: 0 28px 65px rgba(0, 0, 0, 0.35);
+}
+
+html[data-theme="dark"] .dash-top h3,
+html[data-theme="dark"] .dash-stats strong {
+    color: #f3f9fc;
+}
+
+html[data-theme="dark"] .dash-top small,
+html[data-theme="dark"] .dash-stats span,
+html[data-theme="dark"] .game-dashboard > small {
+    color: #8fa8b5;
+}
+
+html[data-theme="dark"] .dash-top > span {
+    background: #1b3d4f;
+    color: #8cd7fb;
+}
+
+html[data-theme="dark"] .progress {
+    background: #203946;
+}
+
+html[data-theme="dark"] .dash-stats div {
+    background: #142b36;
+}
+
+html[data-theme="dark"] .badge-row div {
+    background: #142b36;
+    border-color: #294653;
+}
+
+html[data-theme="dark"] .badge-row small {
+    color: #9db1bc;
+}
+
+html[data-theme="dark"] .game-copy h2 {
+    color: #ffffff;
+}
+
+html[data-theme="dark"] .game-copy p,
+html[data-theme="dark"] .game-copy li {
+    color: #b6cad4;
+}
+
+/* =========================================================
+   CERTIFICATE
+   ========================================================= */
+
+html[data-theme="dark"] .certificate {
+    background: #091820;
+}
+
+html[data-theme="dark"] .certificate-copy h2 {
+    color: #f2f9fc;
+}
+
+html[data-theme="dark"] .certificate-copy p,
+html[data-theme="dark"] .check-list span {
+    color: #9eb4bf;
+}
+
+html[data-theme="dark"] .certificate-card {
+    background:
+            radial-gradient(
+                    circle at top right,
+                    rgba(73, 174, 225, 0.08),
+                    transparent 28%
+            ),
+            linear-gradient(
+                    145deg,
+                    #112631,
+                    #0d2029
+            );
+    border-color: #355766;
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.3);
+}
+
+html[data-theme="dark"] .cert-brand,
+html[data-theme="dark"] .certificate-card h3,
+html[data-theme="dark"] .cert-name,
+html[data-theme="dark"] .certificate-card > strong {
+    color: #eff8fc;
+}
+
+html[data-theme="dark"] .cert-label {
+    color: #ff9c44;
+}
+
+html[data-theme="dark"] .certificate-card p,
+html[data-theme="dark"] .cert-foot {
+    color: #94aeb9;
+}
+
+html[data-theme="dark"] .cert-line {
+    background: #34505d;
+}
+
+/* =========================================================
+   NGO - FIX FOR THE BRIGHT SECTION
+   ========================================================= */
+
+html[data-theme="dark"] .ngo {
+    background:
+            radial-gradient(
+                    circle at top left,
+                    rgba(64, 169, 226, 0.16),
+                    transparent 35%
+            ),
+            radial-gradient(
+                    circle at bottom right,
+                    rgba(11, 104, 150, 0.2),
+                    transparent 35%
+            ),
+            linear-gradient(
+                    135deg,
+                    #071822 0%,
+                    #0b2635 55%,
+                    #0f3548 100%
+            );
+
+    color: #f4fbff;
+}
+
+html[data-theme="dark"] .ngo-copy h2 {
+    color: #ffffff;
+}
+
+html[data-theme="dark"] .ngo-copy p {
+    color: #b8ccd7;
+}
+
+html[data-theme="dark"] .ngo .btn-white {
+    background: #eef7fb;
+    color: #0a2b3d;
+    border-color: transparent;
+}
+
+html[data-theme="dark"] .ngo .btn-white:hover {
+    background: #ffffff;
+    color: #071c27;
+    transform: translateY(-2px);
+}
+
+html[data-theme="dark"] .ngo-panel {
+    background: #0f202a;
+    color: #eef6fb;
+    border: 1px solid #28414f;
+    box-shadow: 0 30px 70px rgba(0, 0, 0, 0.35);
+}
+
+html[data-theme="dark"] .panel-title span {
+    color: #8fa8b7;
+}
+
+html[data-theme="dark"] .panel-title b {
+    color: #eef6fb;
+}
+
+html[data-theme="dark"] .panel-stats > div {
+    background: #142a36;
+    border: 1px solid #294654;
+}
+
+html[data-theme="dark"] .panel-stats strong {
+    color: #f4fbff;
+}
+
+html[data-theme="dark"] .panel-stats small {
+    color: #91a9b6;
+}
+
+html[data-theme="dark"] .panel-project {
+    background: #102530;
+    border-color: #34505f;
+}
+
+html[data-theme="dark"] .panel-project strong {
+    color: #f1f8fc;
+}
+
+html[data-theme="dark"] .panel-project small {
+    color: #8da6b4;
+}
+
+html[data-theme="dark"] .project-icon {
+    background: #173c31;
+}
+
+html[data-theme="dark"] .ngo-features span {
+    background: #132833;
+    color: #cfe0e8;
+    border: 1px solid #29424f;
+}
+
+html[data-theme="dark"] .panel-project button {
+    background: #4eb4ec;
+    color: #07141c;
+}
+
+/* =========================================================
+   WELLBEING
+   ========================================================= */
+
+html[data-theme="dark"] .wellbeing {
+    background:
+            radial-gradient(
+                    circle at 18% 35%,
+                    rgba(70, 169, 219, 0.08),
+                    transparent 28%
+            ),
+            #06141c;
+}
+
+html[data-theme="dark"] .well-card {
+    border-color: #29414f;
+    background: rgba(16, 35, 45, 0.9);
+}
+
+html[data-theme="dark"] .well-card.main h3 {
+    color: #f4fbff;
+}
+
+html[data-theme="dark"] .well-card.main p {
+    color: #9eb4bf;
+}
+
+html[data-theme="dark"] .mood button {
+    background: #132a35;
+    border-color: #2b4755;
+}
+
+html[data-theme="dark"] .well-copy h2 {
+    color: #ffffff;
+}
+
+html[data-theme="dark"] .well-copy > p {
+    color: #a5bbc6;
+}
+
+html[data-theme="dark"] .well-list article {
+    border-color: rgba(255, 255, 255, 0.08);
+}
+
+html[data-theme="dark"] .well-list strong {
+    color: #f2f8fb;
+}
+
+html[data-theme="dark"] .well-list small {
+    color: #8fa7b3;
+}
+
+/* =========================================================
+   GOALS
+   ========================================================= */
+
+html[data-theme="dark"] .goals {
+    background: #081720;
+}
+
+html[data-theme="dark"] .goal {
+    background: #10232d;
+    border-color: #294653;
+}
+
+html[data-theme="dark"] .goal strong {
+    color: #7bcef5;
+}
+
+html[data-theme="dark"] .goal > span {
+    color: #edf8fc;
+}
+
+html[data-theme="dark"] .goal small {
+    color: #91a9b6;
+}
+
+/* =========================================================
+   TESTIMONIALS
+   ========================================================= */
+
+html[data-theme="dark"] .testimonials {
+    background: #0a1922;
+}
+
+html[data-theme="dark"] .testimonial-grid blockquote {
+    background: #10232d;
+    border-color: #294653;
+    box-shadow: 0 18px 42px rgba(0, 0, 0, 0.2);
+}
+
+html[data-theme="dark"] .testimonial-grid blockquote p {
+    color: #b0c4ce;
+}
+
+html[data-theme="dark"] .testimonial-grid blockquote strong {
+    color: #eef7fb;
+}
+
+html[data-theme="dark"] .testimonial-grid blockquote small {
+    color: #8ba4b0;
+}
+
+html[data-theme="dark"] .quote {
+    color: #5dbbea;
+}
+
+/* =========================================================
+   ABOUT / TEAM
+   ========================================================= */
+
+html[data-theme="dark"] .about {
+    background:
+            radial-gradient(
+                    circle at 80% 20%,
+                    rgba(255, 140, 42, 0.08),
+                    transparent 25%
+            ),
+            #07151e;
+}
+
+html[data-theme="dark"] .about-copy h2 {
+    color: #ffffff;
+}
+
+html[data-theme="dark"] .about-copy p {
+    color: #a8bcc6;
+}
+
+html[data-theme="dark"] .team-grid article {
+    background: #10232d;
+    border-color: #294653;
+}
+
+html[data-theme="dark"] .team-grid strong {
+    color: #f1f8fb;
+}
+
+html[data-theme="dark"] .team-grid small,
+html[data-theme="dark"] .team-grid p {
+    color: #91a8b4;
+}
+
+html[data-theme="dark"] .team-edit-hint {
+    color: #69c4ef;
+}
+
+html[data-theme="dark"] .team-avatar {
+    background: #173b4d;
+    color: #8edcff;
+}
+
+/* =========================================================
+   FAQ
+   ========================================================= */
+
+html[data-theme="dark"] .faq {
+    background: #081720;
+}
+
+html[data-theme="dark"] .accordion article {
+    background: #10232d;
+    border-color: #294653;
+}
+
+html[data-theme="dark"] .accordion button {
+    color: #eef7fb;
+}
+
+html[data-theme="dark"] .accordion button span {
+    color: #65c2ed;
+}
+
+html[data-theme="dark"] .accordion article > div {
+    border-color: #294653;
+}
+
+html[data-theme="dark"] .accordion article > div p {
+    color: #9db3be;
+}
+
+/* =========================================================
+   FINAL CTA
+   ========================================================= */
+
+html[data-theme="dark"] .final-cta {
+    background: #07151d;
+}
+
+html[data-theme="dark"] .cta-card {
+    background:
+            radial-gradient(
+                    circle at 85% 20%,
+                    rgba(255, 147, 50, 0.13),
+                    transparent 25%
+            ),
+            linear-gradient(
+                    135deg,
+                    #092231,
+                    #0d3e58
+            );
+    border: 1px solid #264656;
+}
+
+html[data-theme="dark"] .cta-card h2 {
+    color: #ffffff;
+}
+
+html[data-theme="dark"] .cta-card h2 span {
+    color: #83d2f6;
+}
+
+html[data-theme="dark"] .cta-card p {
+    color: #a9bfca;
+}
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+html[data-theme="dark"] .footer {
+    background: #041018;
+    color: #dce9ef;
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+html[data-theme="dark"] .footer p,
+html[data-theme="dark"] .footer small {
+    color: #7f99a6;
+}
+
+html[data-theme="dark"] .footer h4 {
+    color: #eef7fb;
+}
+
+html[data-theme="dark"] .footer a {
+    color: #9fb5bf;
+}
+
+html[data-theme="dark"] .footer a:hover {
+    color: #ffffff;
+}
+
+html[data-theme="dark"] .footer-bottom {
+    border-color: rgba(255, 255, 255, 0.07);
+    color: #75909d;
+}
+
+/* =========================================================
+   MUSIC / FLOATING CONTROLS
+   ========================================================= */
+
+html[data-theme="dark"] .music-btn,
+html[data-theme="dark"] .back-top {
+    border-color: #31505f;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.28);
+}
+
+html[data-theme="dark"] .music-hint {
+    color: #a3bac5;
+}
+
+html[data-theme="dark"] .music-toast {
+    background: #10242e;
+    color: #eaf6fb;
+    border-color: #2a4653;
+}
+
+/* =========================================================
+   GENERIC INPUTS / BUTTONS
+   ========================================================= */
+
+html[data-theme="dark"] input,
+html[data-theme="dark"] textarea,
+html[data-theme="dark"] select {
+    color-scheme: dark;
+}
+
+html[data-theme="dark"] ::selection {
+    background: rgba(91, 188, 233, 0.35);
+    color: #ffffff;
+}
