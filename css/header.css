@@ -10,9 +10,9 @@
     width: 100%;
     z-index: 50;
     transition:
-        background-color 0.3s ease,
-        box-shadow 0.3s ease,
-        border-color 0.3s ease;
+            background-color 0.3s ease,
+            box-shadow 0.3s ease,
+            border-color 0.3s ease;
 }
 
 .site-header .container {
@@ -157,10 +157,10 @@
     font-weight: 800;
     cursor: pointer;
     transition:
-        background-color 0.2s ease,
-        color 0.2s ease,
-        transform 0.2s ease,
-        box-shadow 0.2s ease;
+            background-color 0.2s ease,
+            color 0.2s ease,
+            transform 0.2s ease,
+            box-shadow 0.2s ease;
 }
 
 .site-header .lang-option:hover {
@@ -194,10 +194,10 @@
     cursor: pointer;
     box-shadow: 0 5px 16px rgba(11, 46, 69, 0.06);
     transition:
-        transform 0.2s ease,
-        background-color 0.2s ease,
-        border-color 0.2s ease,
-        box-shadow 0.2s ease;
+            transform 0.2s ease,
+            background-color 0.2s ease,
+            border-color 0.2s ease,
+            box-shadow 0.2s ease;
 }
 
 .site-header .theme-btn:hover {
@@ -383,5 +383,40 @@ html[data-theme="dark"] .site-header .theme-sun {
     .site-header .theme-btn {
         width: 35px;
         height: 35px;
+    }
+}
+
+/* APK download: same visual language as the original small Login button. */
+.site-header .nav-actions .btn-download-app {
+    padding: 10px 12px;
+    font-size: 0.75rem;
+    white-space: nowrap;
+}
+
+/* In the hamburger menu, show the download action at the bottom. */
+.site-header .nav-links .mobile-download-app {
+    display: none;
+}
+
+@media (max-width: 1110px) {
+    .site-header .nav-links .mobile-download-app {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 44px;
+        margin-top: 8px;
+        padding: 11px 14px;
+        border-radius: 12px;
+        background: var(--orange, #ed782b);
+        color: #ffffff;
+        font-weight: 800;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    .site-header .nav-links .mobile-download-app:hover,
+    .site-header .nav-links .mobile-download-app:focus-visible {
+        background: #d9691d;
+        color: #ffffff;
     }
 }
